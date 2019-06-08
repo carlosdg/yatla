@@ -6,6 +6,7 @@ import NavList from "./components/NavList";
 import Header from "./components/Header";
 import Pages from "./pages";
 import "./styles.css";
+import TodoStore from "./stores/TodoStore";
 
 const AppContainer = styled.div`
   background: white;
@@ -35,7 +36,9 @@ const App = () => (
         <NavList />
       </Nav>
       <Main>
-        <Pages />
+        <TodoStore>
+          <Pages />
+        </TodoStore>
       </Main>
     </MainContainer>
   </AppContainer>
