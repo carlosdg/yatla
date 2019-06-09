@@ -1,4 +1,5 @@
 import React from "react";
+import posed from "react-pose";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -9,27 +10,26 @@ const A = styled(Link)`
   margin: 1rem 0;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.15);
-  }
-
-  &:first-child {
-    margin-top: 0;
-  }
 `;
+
+const Li = posed.li({
+  hoverable: true,
+  pressable: true,
+  hover: { scale: 1.1 },
+  hoverEnd: { scale: 1 },
+  press: { scale: 0.9 }
+});
 
 export default () => (
   <ul>
-    <li>
+    <Li>
       <A to="/">Home</A>
-    </li>
-    <li>
+    </Li>
+    <Li>
       <A to="/about">About</A>
-    </li>
-    <li>
+    </Li>
+    <Li>
       <A to="/todos">To do list</A>
-    </li>
+    </Li>
   </ul>
 );
