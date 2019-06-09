@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import posed from "react-pose";
+import Todo from "../components/Todo";
 import { TodoContext } from "../stores/TodoStore";
 
 const Container = posed.div({
@@ -13,15 +13,22 @@ const Li = posed.li({
 });
 
 export default () => {
-  const [{ todos }] = React.useContext(TodoContext);
+  const [{ todos }, dispatch] = React.useContext(TodoContext);
+
+  const whenTodoDone = ({ id }) => {
+    dispatch({
+      type: "TOGGLE_COMPLETED",
+      payload: { id }
+    });
+  };
 
   return (
     <Container>
       <h2>To do list</h2>
       <ul>
-        {todos.map(({ id, title }) => (
-          <Li key={id}>
-            <Link to={`/todo/${id}`}>{title}</Link>
+        {todos.map(todo => (
+          <Li key={todo.id}>
+            <Todo todo={todo} whenDone={whenTodoDone} />
           </Li>
         ))}
       </ul>

@@ -15,6 +15,13 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
+    case "TOGGLE_COMPLETED":
+      const newTodos = state.todos.map(todo =>
+        todo.id === action.payload.id
+          ? { ...todo, completed: !todo.completed }
+          : todo
+      );
+      return { ...state, todos: newTodos };
     default:
       throw new Error(`Unknown action ${JSON.stringify(action)}`);
   }
