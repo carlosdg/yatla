@@ -16,10 +16,19 @@ export default () => {
   const [{ todos }, dispatch] = React.useContext(TodoContext);
 
   const whenTodoDone = ({ id }) => {
-    dispatch({
-      type: "TOGGLE_COMPLETED",
-      payload: { id }
-    });
+    dispatch({ type: "TOGGLE_COMPLETED", payload: { id } });
+  };
+
+  const onDelete = ({ id, completed }) => {
+    const toRemove = window.confirm(
+      `Are you sure that you want to remove this ${
+        completed ? "" : "UNDONE "
+      }todo?`
+    );
+
+    if (toRemove) {
+      dispatch({ type: "REMOVE_TODO", payload: { id } });
+    }
   };
 
   return (
@@ -28,7 +37,7 @@ export default () => {
       <ul>
         {todos.map(todo => (
           <Li key={todo.id}>
-            <Todo todo={todo} whenDone={whenTodoDone} />
+            <Todo todo={todo} whenDone={whenTodoDone} onDelete={onDelete} />
           </Li>
         ))}
       </ul>

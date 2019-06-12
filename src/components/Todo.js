@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Title = styled.h3`
   font-weight: normal;
   margin: 0;
+  margin-right: 0.5rem;
   position: relative;
   display: inline-block;
 `;
@@ -30,22 +31,29 @@ const Description = styled.p`
   color: rgba(0, 0, 0, 0.55);
 `;
 
-export default ({ todo, whenDone }) => {
+const DeleteButton = styled.button`
+  font: inherit;
+  background: none;
+  border-radius: 5px;
+`;
+
+export default ({ todo, whenDone, onDelete }) => {
   const onCheck = () => {
     whenDone(todo);
   };
 
   return (
     <>
+      <Title>
+        <LineThrough pose={todo.completed ? "completed" : "notCompleted"} />
+        {todo.title}
+      </Title>
       <input
         type="checkbox"
         defaultChecked={todo.completed}
         onChange={onCheck}
       />
-      <Title>
-        <LineThrough pose={todo.completed ? "completed" : "notCompleted"} />
-        {todo.title}
-      </Title>
+      <DeleteButton onClick={() => onDelete(todo)}>&times;</DeleteButton>
       <Description>{todo.description}</Description>
     </>
   );

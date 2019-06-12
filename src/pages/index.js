@@ -6,7 +6,7 @@ import About from "../pages/about";
 import TodoList from "../pages/todo_list";
 
 const RouteContainer = posed.div({
-  enter: { opacity: 1, delay: 50, beforeChildren: true },
+  enter: { opacity: 1, beforeChildren: true },
   exit: { opacity: 0 }
 });
 
