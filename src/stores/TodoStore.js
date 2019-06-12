@@ -9,6 +9,14 @@ const initialState = {
       title: "Example task",
       description: "JUST DO IT!",
       completed: false
+    },
+    {
+      id: "2",
+      title:
+        "Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task",
+      description:
+        "JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT!",
+      completed: false
     }
   ]
 };
