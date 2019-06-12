@@ -1,15 +1,17 @@
 import React from "react";
-import posed from "react-pose";
+import posed, { PoseGroup } from "react-pose";
 import Todo from "../components/Todo";
 import { TodoContext } from "../stores/TodoStore";
 
 const Container = posed.div({
-  enter: { staggerChildren: 50 }
+  enter: { staggerChildren: 10 }
 });
 
 const Li = posed.li({
   enter: { y: 0, opacity: 1 },
-  exit: { y: 50, opacity: 0 }
+  exit: { y: 50, opacity: 0 },
+  enterOnRemove: { opacity: 1 },
+  exitOnRemove: { opacity: 0 }
 });
 
 export default () => {
@@ -35,11 +37,13 @@ export default () => {
     <Container>
       <h2>To do list</h2>
       <ul>
-        {todos.map(todo => (
-          <Li key={todo.id}>
-            <Todo todo={todo} whenDone={whenTodoDone} onDelete={onDelete} />
-          </Li>
-        ))}
+        <PoseGroup enterPose="enterOnRemove" exitPose="exitOnRemove">
+          {todos.map(todo => (
+            <Li key={todo.id}>
+              <Todo todo={todo} whenDone={whenTodoDone} onDelete={onDelete} />
+            </Li>
+          ))}
+        </PoseGroup>
       </ul>
     </Container>
   );
