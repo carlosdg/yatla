@@ -13,10 +13,16 @@ const initialState = {
     {
       id: "2",
       title:
-        "Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task Example task",
+        "Example task overflowing the container. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, ab officiis aut minus hic at nihil veniam quos, eveniet a soluta iusto, eligendi facilis explicabo sunt sequi culpa! Facere, quas.",
       description:
-        "JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT! JUST DO IT!",
+        "An example of a task oveflowing the container. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, ab officiis aut minus hic at nihil veniam quos, eveniet a soluta iusto, eligendi facilis explicabo sunt sequi culpa! Facere, quas.",
       completed: false
+    },
+    {
+      id: "3",
+      title: "Example task completed",
+      description: "An example of a completed task",
+      completed: true
     }
   ]
 };
