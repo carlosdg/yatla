@@ -13,6 +13,9 @@ const AppContainer = styled.div`
   border-radius: 20px;
   padding: 20px;
   min-height: calc(100vh - 20px);
+
+  max-width: 800px;
+  margin: auto;
 `;
 
 const MainContainer = styled.div`
