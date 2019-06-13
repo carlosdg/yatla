@@ -16,7 +16,7 @@ const Li = styled(
     exitOnRemove: { opacity: 0 }
   })
 )`
-  display: inline-block;
+  max-width: 600px;
   padding: 1rem;
   background: #e6cab6;
 

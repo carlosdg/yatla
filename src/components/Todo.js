@@ -2,15 +2,10 @@ import React from "react";
 import posed from "react-pose";
 import styled from "styled-components";
 
-const Container = styled.div`
-  width: 500px;
-`;
-
 const TodoHeader = styled.div`
   display: flex;
   align-items: center;
   margin-top: 0.5rem;
-  width: 500px;
 `;
 
 const Title = styled.h3`
@@ -61,7 +56,7 @@ export default ({ todo, whenDone, onDelete }) => {
   };
 
   return (
-    <Container>
+    <>
       <TodoHeader>
         <input
           type="checkbox"
@@ -75,6 +70,6 @@ export default ({ todo, whenDone, onDelete }) => {
         <DeleteButton onClick={() => onDelete(todo)}>&times;</DeleteButton>
       </TodoHeader>
       <Description>{todo.description}</Description>
-    </Container>
+    </>
   );
 };
