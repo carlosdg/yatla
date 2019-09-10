@@ -26,9 +26,6 @@ export default () => (
       <A to="/">Home</A>
     </Li>
     <Li>
-      <A to="/about">About</A>
-    </Li>
-    <Li>
       <A to="/todos">To do list</A>
     </Li>
     <Li>

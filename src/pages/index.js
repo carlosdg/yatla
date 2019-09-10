@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import posed, { PoseGroup } from "react-pose";
 import Home from "../pages/home";
-import About from "../pages/about";
 import TodoList from "../pages/todo_list";
 import AddTodo from "../pages/add_todo";
 
@@ -19,7 +18,6 @@ export default () => {
           <RouteContainer key={location.pathname}>
             <Switch location={location}>
               <Route exact path="/" component={Home} key="home" />
-              <Route path="/about" component={About} key="about" />
               <Route path="/todos" component={TodoList} key="todos" />
               <Route path="/new" component={AddTodo} key="new" />
             </Switch>

@@ -22,12 +22,12 @@ export default () => (
     <h2>Home</h2>
     <ListContainer>
       <Item>
-        <Link to="/about">About</Link>
-        <P>See more information about this app</P>
-      </Item>
-      <Item>
         <Link to="/todos">To do List</Link>
         <P>Go to the list of tasks</P>
+      </Item>
+      <Item>
+        <Link to="/new">New task</Link>
+        <P>Add new task to do</P>
       </Item>
     </ListContainer>
   </div>
