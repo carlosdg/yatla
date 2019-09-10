@@ -45,6 +45,18 @@ function reducer(state, action) {
       return { ...state, todos: newTodos };
     }
 
+    case "ADD_TODO": {
+      const newTodo = {
+        id: Date.now(),
+        title: action.payload.title,
+        description: action.payload.description,
+        completed: false
+      };
+      const newTodoList = [...state.todos, newTodo];
+
+      return { ...state, todos: newTodoList };
+    }
+
     default:
       throw new Error(`Unknown action ${JSON.stringify(action)}`);
   }

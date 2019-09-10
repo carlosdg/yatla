@@ -4,6 +4,7 @@ import posed, { PoseGroup } from "react-pose";
 import Home from "../pages/home";
 import About from "../pages/about";
 import TodoList from "../pages/todo_list";
+import AddTodo from "../pages/add_todo";
 
 const RouteContainer = posed.div({
   enter: { opacity: 1, beforeChildren: true },
@@ -20,6 +21,7 @@ export default () => {
               <Route exact path="/" component={Home} key="home" />
               <Route path="/about" component={About} key="about" />
               <Route path="/todos" component={TodoList} key="todos" />
+              <Route path="/new" component={AddTodo} key="new" />
             </Switch>
           </RouteContainer>
         </PoseGroup>

@@ -31,5 +31,8 @@ export default () => (
     <Li>
       <A to="/todos">To do list</A>
     </Li>
+    <Li>
+      <A to="/new">New to do</A>
+    </Li>
   </ul>
 );
