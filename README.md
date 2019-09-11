@@ -7,7 +7,7 @@ Yet another todo list application. A very simple application made to use the fol
 - React hooks
 - React router
 
-Feel free to checkout the project on [CodeSandbox](https://codesandbox.io/s/yatla-iszow) were you can see the application and play around with the code in a editor in the browser.
+Feel free to checkout the app deployed in [Github Pages](https://carlosdg.github.io/yatla/). Also there is a [CodeSandbox](https://codesandbox.io/s/yatla-iszow) were you can see the application and play around with the code in the browser.
 
 ## Demo
 
