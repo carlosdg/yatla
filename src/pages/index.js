@@ -17,9 +17,22 @@ export default () => {
         <PoseGroup>
           <RouteContainer key={location.pathname}>
             <Switch location={location}>
-              <Route exact path="/" component={Home} key="home" />
-              <Route path="/todos" component={TodoList} key="todos" />
-              <Route path="/new" component={AddTodo} key="new" />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + "/"}
+                component={Home}
+                key="home"
+              />
+              <Route
+                path={process.env.PUBLIC_URL + "/todos"}
+                component={TodoList}
+                key="todos"
+              />
+              <Route
+                path={process.env.PUBLIC_URL + "/new"}
+                component={AddTodo}
+                key="new"
+              />
             </Switch>
           </RouteContainer>
         </PoseGroup>
