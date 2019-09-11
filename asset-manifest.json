@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yatla/static/css/main.42bdf525.chunk.css",
+    "main.js": "/yatla/static/js/main.91be0414.chunk.js",
+    "main.js.map": "/yatla/static/js/main.91be0414.chunk.js.map",
+    "runtime~main.js": "/yatla/static/js/runtime~main.a756d1c6.js",
+    "runtime~main.js.map": "/yatla/static/js/runtime~main.a756d1c6.js.map",
+    "static/js/2.c70fe4ea.chunk.js": "/yatla/static/js/2.c70fe4ea.chunk.js",
+    "static/js/2.c70fe4ea.chunk.js.map": "/yatla/static/js/2.c70fe4ea.chunk.js.map",
+    "index.html": "/yatla/index.html",
+    "precache-manifest.ce5f839938c8252f0c79a230176ecfb7.js": "/yatla/precache-manifest.ce5f839938c8252f0c79a230176ecfb7.js",
+    "service-worker.js": "/yatla/service-worker.js",
+    "static/css/main.42bdf525.chunk.css.map": "/yatla/static/css/main.42bdf525.chunk.css.map"
+  }
+}
