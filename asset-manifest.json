@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yatla/static/css/main.42bdf525.chunk.css",
-    "main.js": "/yatla/static/js/main.ed214fb3.chunk.js",
-    "main.js.map": "/yatla/static/js/main.ed214fb3.chunk.js.map",
+    "main.js": "/yatla/static/js/main.aa90bee0.chunk.js",
+    "main.js.map": "/yatla/static/js/main.aa90bee0.chunk.js.map",
     "runtime~main.js": "/yatla/static/js/runtime~main.a756d1c6.js",
     "runtime~main.js.map": "/yatla/static/js/runtime~main.a756d1c6.js.map",
     "static/js/2.c70fe4ea.chunk.js": "/yatla/static/js/2.c70fe4ea.chunk.js",
     "static/js/2.c70fe4ea.chunk.js.map": "/yatla/static/js/2.c70fe4ea.chunk.js.map",
     "index.html": "/yatla/index.html",
-    "precache-manifest.a5dfd26075b705b93e4a6222578c7ca3.js": "/yatla/precache-manifest.a5dfd26075b705b93e4a6222578c7ca3.js",
+    "precache-manifest.4e2dfa4a2fe621ee786d881c22c3859e.js": "/yatla/precache-manifest.4e2dfa4a2fe621ee786d881c22c3859e.js",
     "service-worker.js": "/yatla/service-worker.js",
     "static/css/main.42bdf525.chunk.css.map": "/yatla/static/css/main.42bdf525.chunk.css.map"
   }
